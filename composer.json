@@ -8,8 +8,13 @@
   ],
   "license": "MIT",
   "require": {
-    "php": "^7.2",
-    "kriswallsmith/buzz": "^1",
-    "nyholm/psr7": "^1.1"
+    "php": ">=5.6",
+    "kriswallsmith/buzz": "~1",
+    "nyholm/psr7": "~1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "kriswallsmith\\Buzz\\": "lib"
+    }
   }
 }
