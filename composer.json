@@ -1,5 +1,5 @@
 {
-  "name": "arengi/buzz-bundle",
+  "name": "arengiservices/phpspreadsheet-bundle",
   "description": "Bundle around the Buzz HTTP client",
   "type": "symfony-bundle",
   "keywords": [
