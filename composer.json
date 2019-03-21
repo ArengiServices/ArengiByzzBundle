@@ -1,0 +1,19 @@
+{
+  "name": "arengi/buzz-bundle",
+  "description": "Bundle around the Buzz HTTP client",
+  "type": "symfony-bundle",
+  "keywords": ["http client", "buzz"],
+  "license": "MIT",
+  "require": {
+    "php": ">=7.2",
+    "kriswallsmith/buzz": "^1",
+    "nyholm/psr7": "^1.1"
+  },
+  "target-dir": "ArengiBuzzBundle",
+  "extra" : {
+    "branch-alias" : {
+      "dev-master" : "0.1"
+    }
+  }
+}
+}
