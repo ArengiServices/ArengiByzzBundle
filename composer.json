@@ -5,7 +5,7 @@
   "keywords": ["http client", "buzz"],
   "license": "MIT",
   "require": {
-    "php": ">=7.2",
+    "php": "^7.2",
     "kriswallsmith/buzz": "^1",
     "nyholm/psr7": "^1.1"
   },
