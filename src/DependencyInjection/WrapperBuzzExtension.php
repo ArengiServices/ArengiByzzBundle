@@ -22,5 +22,11 @@ class WrapperBuzzExtension extends Extension
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('buzz.yaml');
 
+        $configuration = $this->getConfiguration($configs, $container);
+        $config = $this->processConfiguration($configuration, $configs);
+
+        $container->setParameter('buzz.client.timeout', $config['client_timeout']);
+        $container->setParameter('buzz.client.proxy', $config['proxy']);
+
     }
 }
