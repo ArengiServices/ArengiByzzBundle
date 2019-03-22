@@ -7,13 +7,6 @@ services:
   arengi.buzz.client:
       class: Buzz\Client\FileGetContents
       arguments : ["@arengi.psr17"]
-      calls:
-        - method : setTimeout
-          arguments:
-            - "%buzz.client.timeout%"
-        - method: setProxy
-          arguments:
-            - "%buzz.client.proxy%"
       public: true
 
   arengi.buzz:
