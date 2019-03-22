@@ -6,7 +6,7 @@
  * Time: 14:41
  */
 
-namespace App\ArengiBuzzBundle\DependencyInjection;
+namespace ArengiBuzzBundle\DependencyInjection;
 
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;

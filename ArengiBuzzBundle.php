@@ -6,7 +6,7 @@
  * Time: 14:39
  */
 
-namespace App\ArengiBuzzBundle;
+namespace ArengiBuzzBundle;
 
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
