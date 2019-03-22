@@ -1,13 +1,17 @@
 services:
 
+  arengi.psr17:
+    class: Nyholm\Psr7\Factory\Psr17Factory
+    public: true
+
   arengi.buzz.client:
       class: Buzz\Client\FileGetContents
-      arguments : ["@nyholm.psr7.psr17_factory"]
+      arguments : ["@arengi.psr17"]
       public: true
 
   arengi.buzz:
       class: Buzz\Browser
-      arguments: ["@arengi.buzz.client", "@nyholm.psr7.psr17_factory"]
+      arguments: ["@arengi.buzz.client", "@arengi.psr17"]
       public: true
 
 
